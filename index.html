@@ -292,15 +292,105 @@
         <!-- TODO: Replace with your research result images -->
         <img src="static/images/Screenshot 2025-12-14 at 15.40.12.png" alt="qualitative3" loading="lazy"/>
       </div>
-
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            We introduce <b>SAN<span style="font-variant: small-caps;">Desc</span></b> a <u>S</u>treamlined <u>A</u>ttention-based <u>N</u>etwork for <u>Desc</u>riptor extraction that aims to improve on existing architectures for keypoint description.
+            Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
+            We employ a revised <span style="white-space: nowrap;">U-Net-like</span> architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.
+            We refer to the building blocks of our model as Residual U-Net Blocks with Attention. The model is trained using a modified triplet loss in combination with a curriculum learning–inspired hard negative mining strategy, which improves training stability.
+            Extensive experiments on HPatches, MegaDepth-1500, and the Image Matching Challenge 2021 show that training SAN<span style="font-variant: small-caps;">Desc</span> on top of existing keypoint detectors leads to improved results on multiple matching tasks compared to the original keypoint descriptors. At the same time, SAN<span style="font-variant: small-caps;">Desc</span> has a model complexity of just 2.4 million parameters.
+            As a further contribution, we introduce a new urban dataset featuring 4K images and pre-calibrated intrinsics, designed to evaluate feature extractors. On this benchmark, SAN<span style="font-variant: small-caps;">Desc</span> achieves substantial performance gains over the existing descriptors while operating with limited computational resources.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
-<!-- Video carousel -->
+
+<!-- Model Arch -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/ruba.png" alt="RUBA" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Residual U-Net Block with Attention (RUBA) structure.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/architecture.png" alt="Architecture" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Sandesc architecture overview.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Table with Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/graz4k.png" alt="graz4k" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Graz4K results with a 2048 keypoints budget for three resolutions. DeDoDe-B and -G share the detector. ALIKED+SANDESC achieves the highest scores in all cases.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/md1500.png" alt="md1500" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          MD1500 results with 2048 and 30 000 keypoints budgets. DeDoDe-B and -G share the same detector. DeDoDe+SANDESC scores the highest AUC@5 with 2048 keypoints.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/imc.png" alt="imc" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          IMC21 Phototourim test set results in terms of AUC@5. The keypoints budget is set to 2048. DeDoDe-B and -G share the same detector. ALIKED+SANDESC overall achieves the highest average score.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/hpatches.png" alt="HPatches" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          HPatches results with budget of 2048 keypoints.DeDoDe-B and -G share the same detector. DeDoDe+SANDESC overall achieves the highest Homography Accuracy.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- GRAZ4K sparse reconstructions -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -353,100 +443,6 @@
   </div>
 </section>
 <!-- End video carousel -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            We introduce <b>SAN<span style="font-variant: small-caps;">Desc</span></b> a <u>S</u>treamlined <u>A</u>ttention-based <u>N</u>etwork for <u>Desc</u>riptor extraction that aims to improve on existing architectures for keypoint description.
-            Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
-            We employ a revised <span style="white-space: nowrap;">U-Net-like</span> architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.
-            We refer to the building blocks of our model as Residual U-Net Blocks with Attention. The model is trained using a modified triplet loss in combination with a curriculum learning–inspired hard negative mining strategy, which improves training stability.
-            Extensive experiments on HPatches, MegaDepth-1500, and the Image Matching Challenge 2021 show that training SAN<span style="font-variant: small-caps;">Desc</span> on top of existing keypoint detectors leads to improved results on multiple matching tasks compared to the original keypoint descriptors. At the same time, SAN<span style="font-variant: small-caps;">Desc</span> has a model complexity of just 2.4 million parameters.
-            As a further contribution, we introduce a new urban dataset featuring 4K images and pre-calibrated intrinsics, designed to evaluate feature extractors. On this benchmark, SAN<span style="font-variant: small-caps;">Desc</span> achieves substantial performance gains over the existing descriptors while operating with limited computational resources.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/ruba.png" alt="RUBA" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Residual U-Net Block with Attention (RUBA) structure.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/architecture.png" alt="Architecture" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          Sandesc architecture overview.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/graz4k.png" alt="graz4k" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Graz4K results with a 2048 keypoints budget for three resolutions. DeDoDe-B and -G share the detector. ALIKED+SANDESC achieves the highest scores in all cases.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/md1500.png" alt="md1500" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          MD1500 results with 2048 and 30 000 keypoints budgets. DeDoDe-B and -G share the same detector. DeDoDe+SANDESC scores the highest AUC@5 with 2048 keypoints.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/imc.png" alt="imc" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          IMC21 Phototourim test set results in terms of AUC@5. The keypoints budget is set to 2048. DeDoDe-B and -G share the same detector. ALIKED+SANDESC overall achieves the highest average score.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/hpatches.png" alt="HPatches" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          HPatches results with budget of 2048 keypoints.DeDoDe-B and -G share the same detector. DeDoDe+SANDESC overall achieves the highest Homography Accuracy.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
 
 
 
