@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="SANDesc - D'Urso et al.">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -245,19 +245,29 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://scholar.google.com/citations?user=9FjTo3YAAAAJ&hl=en" target="_blank">Mattia D'Urso</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=1JwKYK8AAAAJ&hl=en" target="_blank">Emanuele Santellani</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6uZVF04AAAAJ&hl=en" target="_blank">Christian Sormann</a><sup>2</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=DA3nSvgAAAAJ&hl=en" target="_blank">Mattia Rossi</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=-uuEU_wAAAAJ&hl=en" target="_blank">Andreas Kuhn</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=M0boL5kAAAAJ&hl=en" target="_blank">Friedrich Fraundorfer</a><sup>1</sup>
+              </span>
+               </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Graz University of Technology, <sup>2</sup>Sony Europe<br>3DV 2026</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -341,7 +351,12 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We introduce <b>SAN<span style="font-variant: small-caps;">Desc</span></b> a <u>S</u>treamlined <u>A</u>ttention-based <u>N</u>etwork for <u>Desc</u>riptor extraction that aims to improve on existing architectures for keypoint description.
+            Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
+            We employ a revised <span style="white-space: nowrap;">U-Net-like</span> architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.
+            We refer to the building blocks of our model as Residual U-Net Blocks with Attention. The model is trained using a modified triplet loss in combination with a curriculum learning–inspired hard negative mining strategy, which improves training stability.
+            Extensive experiments on HPatches, MegaDepth-1500, and the Image Matching Challenge 2021 show that training SAN<span style="font-variant: small-caps;">Desc</span> on top of existing keypoint detectors leads to improved results on multiple matching tasks compared to the original keypoint descriptors. At the same time, SAN<span style="font-variant: small-caps;">Desc</span> has a model complexity of just 2.4 million parameters.
+            As a further contribution, we introduce a new urban dataset featuring 4K images and pre-calibrated intrinsics, designed to evaluate feature extractors. On this benchmark, SAN<span style="font-variant: small-caps;">Desc</span> achieves substantial performance gains over the existing descriptors while operating with limited computational resources.
           </p>
         </div>
       </div>
@@ -480,13 +495,13 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <pre id="bibtex-code"><code>@inproceedings{durso2026sandesc,
+        title={A Streamlined Attention-based Network for Descriptor Extraction},
+        author={D'Urso, Mattia and Santellani, Emanuele and Sormann, Christian and Rossi, Mattia and Kuhn, Andreas and Fraundorfer, Friedrich},
+        booktitle={2026 International Conference on 3D Vision (3DV)},
+        year={2026},
+        organization={IEEE Computer Society}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
